@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JAVI GAMER</title>
+    <link rel="icon" href="../img/icono.jpeg" type="img/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div class="botons">
+            <a class="btn" href="user-index.html">Inicio</a>
+            <a class="btn" href="user-cuenta.php">Cuenta</a>
+            <a class="btn" href="usuario.php">Tablas</a>
+        </div>
+        <h1 id="title">JAVI GAMER</h1>
+    </div>
+    <main>
+        <header>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-cart"
+                    >   
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+    
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <p class="cantidad-producto-carrito"></p>
+                                <p class="titulo-producto-carrito"></p>
+                                <p class="precio-producto-carrito"></p>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="icon-close"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+    
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                    <a class="btn" id="bbb" href="factura-user.php">Comprar</a>
+                </div>
+            </div>
+        </header>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Z390 Phantom</h2>
+                    <p class="price">460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>H610M-HVS</h2>
+                    <p class="price">620.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>A520M-K V2</h2>
+                    <p class="price">640.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>450M-A PRO MAX</h2>
+                    <p class="price">$750.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>B550M-HDV</h2>
+                    <p class="price">$700.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>MAG B660M</h2>
+                    <p class="price">$500.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>A620M-HDV/M.2+</h2>
+                    <p class="price">$810.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m8.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>PRIME B760M-K</h2>
+                    <p class="price">$1000.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$1000.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/p8.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/g8.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/pr7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ssd7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/disco duro1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram2.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram3.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram4.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram5.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram6.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram7.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/ram8.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="../img/Componentes/m1.jpeg"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Mother</h2>
+                    <p class="price">$460.00</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        </header>
+        
+    </main>
+</body>
+<script src="../java/indexx.js"></script>
+</html>
